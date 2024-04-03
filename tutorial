@@ -1,0 +1,24 @@
+CLI
+
+Use the Ore CLI to run a miner on any machine. To get started, ensure you have Rust and cargo installed.
+sudo apt install build-essential
+curl https://sh.rustup.rs -sSf | sh
+
+
+Next, install the Solana CLI and create a Solana keypair if you haven't done so already.
+sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
+solana-keygen new
+
+
+Now, install the Ore CLI.
+cargo install ore-cli
+
+
+The Ore CLI uses your default Solana CLI config and identity. Ensure you have enough SOL topped up on this account to pay for transaction fees. To begin mining, use the mine command.
+
+ore \
+--rpc https://api.mainnet-beta.solana.com \
+--keypair ~/.config/solana/id.json \
+--priority-fee 1 \
+mine \
+--threads 4
