@@ -1,0 +1,1 @@
+ore --rpc https://api.vip.mainnet-beta.solana.com// --keypair ~/.config/solana/id.json rewards
