@@ -6,7 +6,7 @@ while true; do
     if [ $? -eq 0 ]; then
         break
     else
-        echo "Terjadi kesalahan. Menunggu sebentar sebelum mencoba lagi..."
+        echo "There is an error. Wait a moment before trying again..."
         sleep 5
     fi
 done
