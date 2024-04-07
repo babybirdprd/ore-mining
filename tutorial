@@ -16,4 +16,4 @@ cargo install ore-cli
 
 The Ore CLI uses your default Solana CLI config and identity. Ensure you have enough SOL topped up on this account to pay for transaction fees. To begin mining, use the mine command.
 
-ore --rpc https://api.vip.mainnet-beta.solana.com// --keypair "C:\Users\Steve Business\.config\solana\id.json" balance
+ore --rpc https://api.mainnet-beta.solana.com --keypair "C:\Users\Steve Business\.config\solana\id.json" --priority-fee 1 mine --threads 4
