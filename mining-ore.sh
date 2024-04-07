@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-    ore --rpc https://api.vip.mainnet-beta.solana.com// --keypair ~/.config/solana/id.json --priority-fee 1 mine --threads 4
+    ore --rpc https://api.mainnet-beta.solana.com --keypair "C:\Users\Steve Business\.config\solana\id.json" --priority-fee 1 mine --threads 4
 
     if [ $? -eq 0 ]; then
         break
